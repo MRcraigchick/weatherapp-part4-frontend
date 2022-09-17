@@ -19,7 +19,7 @@ window.onload = async () => {
 };
 async function getLocalWeatherData() {
   console.log('hez');
-  const res = await fetch('http://localhost:3000/weather');
+  const res = await fetch('https://weatherapp-part4-backend.vercel.app/weather');
   const data = res.json();
   return data;
 }
