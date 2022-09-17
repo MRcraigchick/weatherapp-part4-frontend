@@ -1,6 +1,5 @@
 window.onload = async () => {
   const localWeather = await getLocalWeatherData();
-  console.log(localWeather);
   document.querySelector('#currentPos').innerHTML += `
 			<div class="cityContainer">
 				<p id="currentPosName">${localWeather.currentPosWeather.cityName}</p>
@@ -18,7 +17,6 @@ window.onload = async () => {
   document.querySelector('#cityNameInput').value = '';
 };
 async function getLocalWeatherData() {
-  console.log('hez');
   const res = await fetch('https://weatherapp-part4-backend.vercel.app/weather');
   const data = res.json();
   return data;
