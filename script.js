@@ -3,13 +3,13 @@ window.onload = async () => {
   console.log(localWeather);
   document.querySelector('#currentPos').innerHTML += `
 			<div class="cityContainer">
-				<p class="currentPosName">${localWeather.currentPosWeather.cityName}</p>
-				<p class="currentPosDescription">${localWeather.currentPosWeather.description}</p>
+				<p id="currentPosName">${localWeather.currentPosWeather.cityName}</p>
+				<p id="currentPosDescription">${localWeather.currentPosWeather.description}</p>
 				<img class="weatherIcon" src="images/${localWeather.currentPosWeather.main}.png"/>
 				<div class="temperature">
-					<p class="currentPosTempMin">${localWeather.currentPosWeather.tempMin}°C</p>
+					<p id="currentPosTempMin">${localWeather.currentPosWeather.tempMin}°C</p>
 					<span>-</span>
-					<p class="currentPosTempMax">${localWeather.currentPosWeather.tempMax}°C</p>
+					<p id="currentPosTempMax">${localWeather.currentPosWeather.tempMax}°C</p>
 				</div>
 				<button class="deleteCity" id="${localWeather.currentPosWeather.cityName}">Delete</button>
 			</div>
