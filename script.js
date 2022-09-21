@@ -16,8 +16,9 @@ window.onload = async () => {
   updateDeleteCityEventListener();
   document.querySelector('#cityNameInput').value = '';
 };
+
 async function getLocalWeatherData() {
-  const res = await fetch('https://weatherapp-part4-backend.vercel.app/weather');
+  const res = await fetch('http://localhost:3000/weather');
   const data = res.json();
   return data;
 }

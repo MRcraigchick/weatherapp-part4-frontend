@@ -2,10 +2,6 @@
   "name": "weatherapp-part4-frontend",
   "version": "1.0.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MRcraigchick/weatherapp-part4-frontend.git"
-  },
   "devDependencies": {
     "jest": "^27.5.1",
     "jsdom": "^19.0.0",
